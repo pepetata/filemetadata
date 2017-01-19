@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div
+    h1 File Metadata Microservice
+    h3 Select a fiel to upload
+    form(name="uploadFormName", action = "/uploadForm" method="post" enctype="multipart/form-data")
+        div.input
+            span.label Title
+            input(type="file", name="file")
+        div.actions
+            input(type="submit", value="Upload")
+    br
+    br
+    br
+    br
+  footer
+    p Running on node with Express, Jade and Stylus
+    p Inspired by Flavio Ferreira
+      
+    
